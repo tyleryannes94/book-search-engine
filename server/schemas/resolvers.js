@@ -1,3 +1,6 @@
+const User = require('../models/User');
+const signToken = require('../utils/auth');
+
 const resolvers = {
     Query: {
       // Get the current user
@@ -27,9 +30,14 @@ const resolvers = {
       },
       // Add a user
       addUser: async (parent, args) => {
-        const user = await User.create(args);
-        const token = signToken(user);
-        return { token, user };
+        try {
+          const user = await User.create(args);
+          const token = signToken(user);
+          return { token, user };
+        } catch (error) {
+          console.error("Error adding user:", error);
+          throw new Error('Failed to add user');
+        }
       },
       // Save a book
       saveBook: async (parent, { input }, context) => {
