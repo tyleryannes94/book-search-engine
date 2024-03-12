@@ -11,6 +11,9 @@
     "build:client": "cd client && npm run build",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\""
   },
+  "engines": {
+    "node": "21.1.0"
+  },
   "author": "Tyler Yannes",
   "license": "ISC",
   "dependencies": {
