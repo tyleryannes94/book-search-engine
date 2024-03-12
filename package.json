@@ -1,0 +1,23 @@
+{
+    "name": "book-search",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/server.js",
+    "engine": {
+      "node": "16.17.1",
+      "npm": "8.x"
+    },
+    "scripts": {
+      "start": "node server/server.js",
+      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "build": "cd client && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^5.1.0"
+    }
+  }
+  
