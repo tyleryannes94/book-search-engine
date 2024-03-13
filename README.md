@@ -1,36 +1,33 @@
-# book-search-engine
+# Book Search Engine
 
-A react and graphql search engine app for module 21
+A MERN stack app that uses graphQL and Apollo server that allows users to sign up, search for books, and save them to their account.
 
-## Description
+## Technologies Used
+- Mongodb (Atlas), Express, React, Node.js
+- GraphQL
+- Apollo Server
 
-Your App Name is a MERN stack application utilizing GraphQL for efficient data fetching. This app is designed to search for books and save them for the user.
+## Deployment Link
+Render Link: https://book-search-engine-8c4f.onrender.com/
 
-## Installation
 
-To get started, clone this repository and install the dependencies.
-
-git clone [Your Repository URL]
-cd your-app-name
-
-# Install server dependencies
-
-npm install
-
-# Navigate to the client directory and install client dependencies
-
-cd client
-npm install ```
-
-## Usage
-
-# From the root directory to start the server
-
-npm start
-
-# Open a new terminal and navigate to the client directory to start the client
-
-cd client
-npm start
+# Installation
+- Clone the repo
+- Install dependencies for server and client
+- Run the server and client
 
 Visit http://localhost:3000 to view the application.
+
+## Contributing
+- Guidelines for contributing to your project:
+
+- Fork the repository and clone your fork.
+- Create a new branch for your feature or bug fix.
+- Commit changes and push to your fork.
+- Submit a pull request with a comprehensive description of changes.
+
+## License
+- MIT
+
+## Contact Owner
+- Reach me anytime at tyler.tyler@gmail.com
