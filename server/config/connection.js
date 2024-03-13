@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/book-search',{
+mongoose.connect(process.env.ATLAS_URI || 'mongodb://localhost/book-search',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: true,
   });
 
 module.exports = mongoose.connection;
