@@ -1,20 +1,19 @@
 {
-  "name": "your-app-name",
+  "name": "book-search-engine",
   "version": "1.0.0",
   "description": "A MERN stack application with GraphQL",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "start:client": "cd client && npm start",
-    "start:server": "nodemon server.js",
-    "install:client": "cd client && npm install",
-    "build:client": "cd client && npx vite build",
-    "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
-    "build": "npm run build:client && npm run start:server"
-  },
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i --production=false",
+    "build": "cd client && npm run build",
+    "render-build":"npm install && npm run build"
+    },
   "engines": {
     "node": ">=14.0.0"
   },
+  "keywords": [],
   "author": "Tyler Yannes",
   "license": "ISC",
   "dependencies": {
@@ -25,7 +24,7 @@
     "mongoose": "^5.11.15"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
+    "concurrently": "^8.2.0",
     "nodemon": "^2.0.7"
   }
 }
