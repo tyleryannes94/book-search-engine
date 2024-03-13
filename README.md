@@ -10,6 +10,9 @@ A MERN stack app that uses graphQL and Apollo server that allows users to sign u
 ## Deployment Link
 Render Link: https://book-search-engine-8c4f.onrender.com/
 
+## Preview
+<img width="1691" alt="Screenshot 2024-03-12 at 8 23 22 PM" src="https://github.com/tyleryannes94/book-search-engine/assets/144497240/fdd4be79-e482-4391-9fec-fdf3bbc02e86">
+
 
 # Installation
 - Clone the repo
